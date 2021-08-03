@@ -39,9 +39,6 @@
 //function class
 .row {
     @include flex(center, row);
-    @include responsive($break-point) {
-        flex-direction: column;
-    }
     .col {
         flex: 1;
     }
