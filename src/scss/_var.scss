@@ -1,0 +1,29 @@
+//fonts
+
+$main-font: "Poppins";
+
+// colors
+$primary-color: #00b894;
+$bg-color: rgb(255, 255, 255);
+$text-color: #004134;
+$black-color: #373737;
+$white-color: white;
+
+// ====== Break Point ============
+$break-point: 768px;
+
+// ====== Size ============
+
+$size: 1rem;
+$size-md: 0.7rem;
+$size-sm: 0.4rem;
+
+// ====== Layer ============
+$wood-lever: -10;
+$stone-lever: -5;
+$iron-lever: 1;
+$gold-lever: 5;
+$diamond-lever: 10;
+
+// ====== timing function =======
+$ease: cubic-bezier(0.445, 0.05, 0.55, 0.95);
