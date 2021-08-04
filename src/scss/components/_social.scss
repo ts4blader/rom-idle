@@ -1,0 +1,21 @@
+.social {
+    position: fixed;
+    left: 0;
+    padding: 1.5 * $size;
+    top: 65%;
+    transform: translateY(-50%);
+    @include flex(center, column);
+    &__item {
+        width: 4 * $size;
+        margin: 1.5 * $size 0;
+    }
+    &::after {
+        content: "";
+        background: $sub-color;
+        position: absolute;
+        @include size(100%);
+        z-index: -1;
+        bottom: 50%;
+        left: 0;
+    }
+}

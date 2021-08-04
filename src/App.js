@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Social from "./components/Social";
 import Section from "./components/Section";
 import PSP from "./data/psp";
 import "./scss/main.scss";
@@ -8,6 +9,7 @@ function App() {
     <div className="app" id="app">
       <div className="wrapper">
         <Header />
+        <Social />
         <Section content={PSP} gear="psp" />
       </div>
     </div>
