@@ -1,0 +1,29 @@
+.section.psp-section {
+    &__caption {
+        margin-bottom: 5.5 * $size;
+    }
+    &__description {
+        width: 60 * $size;
+        margin-bottom: 7.5 * $size;
+    }
+    .button {
+        width: 25%;
+        margin-bottom: 6.5 * $size;
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .section.psp-section {
+        &__caption {
+            margin-bottom: 5.5 * $size;
+        }
+        &__description {
+            width: 60 * $size;
+            margin-bottom: 7.5 * $size;
+        }
+        .button {
+            width: 25%;
+            margin-bottom: 6.5 * $size;
+        }
+    }
+}

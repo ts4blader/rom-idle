@@ -38,7 +38,7 @@
 
 //function class
 .row {
-    @include flex(center, row);
+    display: flex;
     .col {
         flex: 1;
     }

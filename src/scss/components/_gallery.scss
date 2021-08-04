@@ -1,0 +1,41 @@
+.section {
+    &__gallery {
+        background: $sub-color;
+        padding: 1.5 * $size 2 * $size;
+        &__item {
+            cursor: pointer;
+            width: 20 * $size;
+            margin: 2 * $size;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                background: $primary-color;
+                top: 0;
+                left: -(1.5 * $size);
+                width: 3px;
+                height: 0%;
+            }
+            &.active {
+                &::after {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .section {
+        &__gallery {
+            padding: 1.5 * $size 2 * $size;
+            &__item {
+                width: 20 * $size;
+                margin: 2 * $size;
+                &::after {
+                    left: -(1.5 * $size);
+                }
+            }
+        }
+    }
+}

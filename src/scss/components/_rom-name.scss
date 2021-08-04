@@ -1,0 +1,21 @@
+.section {
+    &__rom-name {
+        @include absoluteCenter("ver");
+        left: 103%;
+        width: 50 * $size;
+        @include flex(center, row);
+        .text {
+            margin: 0 2 * $size;
+            width: 50%;
+            font-size: 2 * $size;
+            font-weight: 600;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        .bar {
+            flex-grow: 1;
+            background: $primary-color;
+            height: 2px;
+        }
+    }
+}

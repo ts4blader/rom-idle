@@ -1,0 +1,38 @@
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    &__caption {
+        text-transform: capitalize;
+        font-size: 7 * $size;
+        margin-top: 10vh;
+    }
+    &__subtitle {
+        font-family: $sub-font;
+        margin-right: 2 * $size;
+    }
+    &__title {
+        font-weight: 800;
+        transform: translateY(10%);
+    }
+    &__description {
+        font-size: 3 * $size;
+        font-family: $sub-font;
+    }
+    .row.bottom {
+        position: relative;
+        width: max-content;
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .section {
+        &__caption {
+            margin-bottom: 4 * $size;
+        }
+        &__description {
+            font-size: 3 * $size;
+        }
+    }
+}
