@@ -1,0 +1,34 @@
+.button {
+    position: relative;
+    text-align: center;
+    p {
+        font-size: 3 * $size;
+        font-weight: 800;
+    }
+    .rect {
+        position: absolute;
+        width: 2 * $size;
+        background: $primary-color;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: width 300ms ease;
+    }
+    &:hover {
+        .rect {
+            width: 100%;
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .button {
+        p {
+            font-size: 3 * $size;
+        }
+        .rect {
+            width: 2 * $size;
+        }
+    }
+}
