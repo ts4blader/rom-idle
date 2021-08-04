@@ -37,4 +37,7 @@ a {
     width: 83%;
     padding: 0 2rem;
     margin: 0 auto;
+    @include responsive($break-point-sm) {
+        width: 80%;
+    }
 }
