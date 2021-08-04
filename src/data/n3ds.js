@@ -15,7 +15,7 @@ const N3DS = {
     "super mario bros 2",
     "luigi's mansion",
     "super smash bros 3ds",
-    "fire emble: awakening",
+    "fire emble - awakening",
   ],
   coodinates: ["0% 0%", "0% 0%", "0% 0%", "0% 0%"],
 };

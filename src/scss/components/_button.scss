@@ -17,7 +17,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: width 300ms ease;
+        transition: width 500ms ease;
     }
     &:hover {
         .rect {
@@ -28,7 +28,7 @@
 @include responsive(1600px) {
     $size: $size-md;
     .button {
-        padding: 2.5 * $size;
+        padding: 1.5 * $size;
         p {
             font-size: 3 * $size;
         }

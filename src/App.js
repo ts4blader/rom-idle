@@ -8,7 +8,7 @@ function App() {
     <div className="app" id="app">
       <div className="wrapper">
         <Header />
-        <Section content={PSP} console="psp" />
+        <Section content={PSP} gear="psp" />
       </div>
     </div>
   );

@@ -13,9 +13,9 @@ const SNES = {
   ],
   roms: [
     "super mario bros",
-    "legend of zelda: a link to the past",
+    "legend of zelda - a link to the past",
     "contra",
-    "teenage mutant ninja turtles: turtles in time",
+    "teenage mutant ninja turtles - turtles in time",
   ],
   coodinates: ["0% 0%", "0% 0%", "0% 0%", "0% 0%"],
 };

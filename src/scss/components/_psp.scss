@@ -1,29 +1,37 @@
-.section.psp-section {
-    &__caption {
+.psp-section {
+    .section__caption {
         margin-bottom: 5.5 * $size;
     }
-    &__description {
+    .section__description {
         width: 60 * $size;
-        margin-bottom: 7.5 * $size;
+        margin-bottom: 5 * $size;
     }
     .button {
         width: 25%;
         margin-bottom: 6.5 * $size;
     }
+    .section__bg {
+        width: 80 * $size;
+        height: 100vh;
+        right: 5.5 * $size;
+    }
 }
 @include responsive(1600px) {
     $size: $size-md;
-    .section.psp-section {
-        &__caption {
+    .psp-section {
+        .section__caption {
             margin-bottom: 5.5 * $size;
         }
-        &__description {
+        .section__description {
             width: 60 * $size;
-            margin-bottom: 7.5 * $size;
+            margin-bottom: 5 * $size;
         }
         .button {
-            width: 25%;
             margin-bottom: 6.5 * $size;
+        }
+        .section__bg {
+            width: 100 * $size;
+            right: 5.5 * $size;
         }
     }
 }

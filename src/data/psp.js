@@ -12,11 +12,11 @@ const PSP = {
   ],
   roms: [
     "god of war - chain of olympus",
-    "monster hunter freedom united",
-    "final fantasy 7: crisis core",
-    "kingdom heart birth by sleep",
+    "monster hunter - freedom united",
+    "final fantasy 7 - crisis core",
+    "kingdom heart - birth by sleep",
   ],
-  coodinates: ["0% 0%", "0% 0%", "0% 0%", "0% 0%"],
+  coodinates: ["0% 0%", "80% 0%", "50% 0%", "20% 0%"],
 };
 
 export default PSP;

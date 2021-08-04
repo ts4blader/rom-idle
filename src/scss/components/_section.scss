@@ -24,15 +24,28 @@
         position: relative;
         width: max-content;
     }
+    &__bg {
+        background: $sub-color;
+        position: absolute;
+        z-index: $wood-lever;
+        &__overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include size(100%);
+            z-index: $stone-lever;
+            background: rgba($color: $sub-color, $alpha: 0.25);
+        }
+    }
 }
 @include responsive(1600px) {
     $size: $size-md;
     .section {
-        &__caption {
-            margin-bottom: 4 * $size;
-        }
         &__description {
             font-size: 3 * $size;
+        }
+        &__caption {
+            font-size: 8 * $size;
         }
     }
 }

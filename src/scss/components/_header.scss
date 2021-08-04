@@ -1,5 +1,5 @@
 .header {
-    top: 8 * $size;
+    top: 6 * $size;
     left: 0;
     width: 100%;
     position: fixed;
@@ -28,6 +28,6 @@
 @include responsive(1600px) {
     $size: $size-md;
     .header {
-        top: 8 * $size;
+        top: 6 * $size;
     }
 }
