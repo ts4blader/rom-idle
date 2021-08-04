@@ -1,8 +1,8 @@
 import React from "react";
 
-const NavLink = ({ text }) => {
+const NavLink = ({ text, active }) => {
   return (
-    <li className="nav__link">
+    <li className={active ? "nav__link active" : "nav__link"}>
       <p>{text}</p>
       <p>{text}</p>
     </li>
@@ -13,7 +13,7 @@ function Nav() {
   return (
     <div className="nav">
       <ul>
-        <NavLink text="home" />
+        <NavLink text="home" active={true} />
         <NavLink text="about" />
         <NavLink text="contact" />
       </ul>
