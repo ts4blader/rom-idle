@@ -1,6 +1,9 @@
 const N3DS = {
   title: "nintendo 3ds",
   subtitle: "let's play",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+
   cta: "explore",
   images: [
     "super-mario-bros.jpg",

@@ -1,6 +1,8 @@
 const PSP = {
   title: "playstation portable",
   subtitle: "let's play",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
   cta: "explore",
   images: [
     "gow.jpg",

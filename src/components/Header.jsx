@@ -6,10 +6,10 @@ function Header() {
   return (
     <div className="header">
       <div className="container">
-        <div className="logo">
+        <a className="logo" href="#app">
           <Icon src="logo.png" alt="LOGO" />
           <Icon src="logo.png" alt="LOGO" />
-        </div>
+        </a>
         <Nav />
       </div>
     </div>

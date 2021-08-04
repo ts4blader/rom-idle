@@ -1,6 +1,9 @@
 const SNES = {
   title: "nintendo entertainment system",
   subtitle: "super",
+  description:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+
   cta: "explore",
   images: [
     "super-mario.jpg",
