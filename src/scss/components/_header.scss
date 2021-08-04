@@ -1,0 +1,10 @@
+.header {
+    .container {
+        @include flex(space-between, row);
+        .logo {
+            .icon:nth-child(2) {
+                background: $primary-color;
+            }
+        }
+    }
+}

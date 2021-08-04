@@ -1,0 +1,28 @@
+.nav {
+    list-style: none;
+    ul {
+        display: flex;
+        li {
+            cursor: pointer;
+            font-size: 3 * $size;
+            font-weight: 600;
+            padding: $size 3 * $size;
+            margin: 0 4 * $size;
+            &.active {
+                background: $primary-color;
+            }
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .nav {
+        ul {
+            li {
+                font-size: 3 * $size;
+                padding: $size 3 * $size;
+                margin: 0 4 * $size;
+            }
+        }
+    }
+}
