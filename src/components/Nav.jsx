@@ -1,12 +1,21 @@
 import React from "react";
 
+const NavLink = ({ text }) => {
+  return (
+    <li className="nav__link">
+      <p>{text}</p>
+      <p>{text}</p>
+    </li>
+  );
+};
+
 function Nav() {
   return (
     <div className="nav">
       <ul>
-        <li className="nav__link active">Home</li>
-        <li className="nav__link">About</li>
-        <li className="nav__link">Contact</li>
+        <NavLink text="home" />
+        <NavLink text="about" />
+        <NavLink text="contact" />
       </ul>
     </div>
   );

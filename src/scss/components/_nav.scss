@@ -3,16 +3,32 @@
     ul {
         display: flex;
         li {
-            cursor: pointer;
-            font-size: 3 * $size;
-            font-weight: 600;
-            padding: $size 3 * $size;
-            margin: 0 4 * $size;
-            &.active {
+            overflow: hidden;
+            position: relative;
+            p {
+                text-transform: capitalize;
+                cursor: pointer;
+                font-size: 3 * $size;
+                font-weight: 600;
+                padding: $size 3 * $size;
+                margin: 0 4 * $size;
+                transition: transform 0.3s ease;
+            }
+            p:nth-child(2) {
+                position: absolute;
+                top: 100%;
+                left: 0;
                 background: $primary-color;
             }
+            &.active {
+                p:nth-child(1) {
+                    background: $primary-color;
+                }
+            }
             &:hover {
-                background: $primary-color;
+                p {
+                    transform: translateY(-100%);
+                }
             }
         }
     }
@@ -22,9 +38,14 @@
     .nav {
         ul {
             li {
-                font-size: 3 * $size;
-                padding: $size 3 * $size;
-                margin: 0 4 * $size;
+                p {
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    font-size: 3 * $size;
+                    font-weight: 600;
+                    padding: $size 3 * $size;
+                    margin: 0 4 * $size;
+                }
             }
         }
     }
