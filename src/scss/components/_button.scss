@@ -1,6 +1,7 @@
 .button {
     position: relative;
     text-align: center;
+    padding: 2.5 * $size;
     p {
         font-size: 3 * $size;
         font-weight: 800;
@@ -24,6 +25,7 @@
 @include responsive(1600px) {
     $size: $size-md;
     .button {
+        padding: 2.5 * $size;
         p {
             font-size: 3 * $size;
         }
