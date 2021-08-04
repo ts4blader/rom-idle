@@ -1,10 +1,33 @@
 .header {
+    top: 8 * $size;
+    left: 0;
+    width: 100%;
+    position: fixed;
     .container {
         @include flex(space-between, row);
         .logo {
+            position: relative;
+            overflow: hidden;
+            .icon {
+                transition: transform 300ms ease;
+            }
+            &:hover {
+                .icon {
+                    transform: translateY(-100%);
+                }
+            }
             .icon:nth-child(2) {
+                position: absolute;
+                top: 100%;
+                left: 0;
                 background: $primary-color;
             }
         }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .header {
+        top: 8 * $size;
     }
 }

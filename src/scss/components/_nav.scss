@@ -11,6 +11,9 @@
             &.active {
                 background: $primary-color;
             }
+            &:hover {
+                background: $primary-color;
+            }
         }
     }
 }
