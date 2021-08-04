@@ -10,7 +10,11 @@ const initial = {
 const Store = ({ children }) => {
   const [state, dispatch] = React.useReducer(Reducer, initial);
 
-  return <Store.Provider value={[state, dispatch]}>{children}</Store.Provider>;
+  return (
+    <StoreContext.Provider value={[state, dispatch]}>
+      {children}
+    </StoreContext.Provider>
+  );
 };
 
 export default Store;
