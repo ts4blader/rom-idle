@@ -1,0 +1,76 @@
+.snes-section {
+    .container {
+        position: relative;
+    }
+    .section__bg {
+        width: 100 * $size;
+        height: 100vh;
+        left: 12 * $size;
+    }
+    .section__subtitle {
+        color: $primary-color;
+        font-size: 3 * $size;
+    }
+    .section__caption {
+        width: 60 * $size;
+        flex-direction: column;
+        margin-bottom: 7 * $size;
+    }
+    .section__title {
+        transform: unset;
+        line-height: 1.5;
+    }
+    .section__description {
+        position: absolute;
+        width: 60 * $size;
+        left: 50%;
+        top: 10%;
+        margin-bottom: 5 * $size;
+    }
+    .button {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        width: 25%;
+    }
+    .row.bottom {
+        margin-left: auto;
+        flex-direction: column;
+    }
+    .section__gallery {
+        margin-bottom: 2 * $size;
+    }
+    .section__rom-name {
+        height: 8 * $size;
+        align-self: center;
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .snes-section {
+        .section__bg {
+            width: 100 * $size;
+            height: 100vh;
+            left: 12 * $size;
+        }
+        .section__subtitle {
+            font-size: 3 * $size;
+        }
+        .section__caption {
+            width: 60 * $size;
+            margin-bottom: 3 * $size;
+        }
+        .section__title {
+            font-size: 7 * $size;
+        }
+        .section__description {
+            width: 60 * $size;
+        }
+        .section__gallery {
+            margin-bottom: 2 * $size;
+        }
+        .row.bottom {
+            margin-left: 35 * $size;
+        }
+    }
+}

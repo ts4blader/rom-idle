@@ -15,6 +15,9 @@
         height: 100vh;
         right: 5.5 * $size;
     }
+    .section__rom-name {
+        margin-left: 2 * $size;
+    }
 }
 @include responsive(1600px) {
     $size: $size-md;

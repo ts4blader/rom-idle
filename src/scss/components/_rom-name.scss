@@ -1,7 +1,5 @@
 .section {
     &__rom-name {
-        @include absoluteCenter("ver");
-        left: 103%;
         width: 50 * $size;
         @include flex(center, row);
         .text {

@@ -3,10 +3,12 @@
     height: 100vh;
     display: flex;
     align-items: center;
+    .container {
+        margin-top: 15vh;
+    }
     &__caption {
         text-transform: capitalize;
         font-size: 7 * $size;
-        margin-top: 10vh;
     }
     &__subtitle {
         font-family: $sub-font;
@@ -21,7 +23,6 @@
         font-family: $sub-font;
     }
     .row.bottom {
-        position: relative;
         width: max-content;
     }
     &__bg {

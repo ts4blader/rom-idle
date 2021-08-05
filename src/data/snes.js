@@ -17,7 +17,7 @@ const SNES = {
     "contra - aliens war",
     "teenage mutant ninja turtles - turtles in time",
   ],
-  coodinates: ["0% 0%", "0% 0%", "0% 0%", "0% 0%"],
+  coodinates: ["0% 0%", "80% 0%", "80% 0%", "10% 0%"],
 };
 
 export default SNES;
