@@ -1,5 +1,6 @@
 .social {
     position: fixed;
+    z-index: $gold-lever;
     left: 0;
     padding: 2 * $size;
     top: 60%;
@@ -13,7 +14,8 @@
         content: "";
         background: $sub-color;
         position: absolute;
-        @include size(100%);
+        width: 100%;
+        height: 90%;
         z-index: -1;
         bottom: 60%;
         left: 0;

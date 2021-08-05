@@ -12,9 +12,9 @@ const SNES = {
     "ninja-turtles.jpg",
   ],
   roms: [
-    "super mario bros",
+    "super mario world",
     "legend of zelda - a link to the past",
-    "contra",
+    "contra - aliens war",
     "teenage mutant ninja turtles - turtles in time",
   ],
   coodinates: ["0% 0%", "0% 0%", "0% 0%", "0% 0%"],

@@ -14,7 +14,7 @@ const N3DS = {
   roms: [
     "super mario bros 2",
     "luigi's mansion",
-    "super smash bros 3ds",
+    "super smash bros 3DS",
     "fire emble - awakening",
   ],
   coodinates: ["0% 0%", "0% 0%", "0% 0%", "0% 0%"],
