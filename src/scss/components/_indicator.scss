@@ -1,0 +1,28 @@
+.indicator {
+    position: fixed;
+    width: max-content;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background: $primary-color;
+    padding: 1.25 * $size 2.5 * $size;
+    &__dot {
+        @include size(2 * $size);
+        background: white;
+        border-radius: 50%;
+        margin: 2.5 * $size 0;
+        &.active {
+            background: $sub-color;
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .indicator {
+        padding: 1.25 * $size 2.5 * $size;
+        &__dot {
+            @include size(2 * $size);
+            margin: 2.5 * $size 0;
+        }
+    }
+}
