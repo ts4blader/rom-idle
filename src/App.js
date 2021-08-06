@@ -29,9 +29,11 @@ function App() {
         <Header />
         <Social />
         <Indicator length={content.length} />
-        {content.map((item, index) => (
-          <Section content={item.data} gear={item.gear} key={index} />
-        ))}
+        <main>
+          {content.map((item, index) => (
+            <Section content={item.data} gear={item.gear} key={index} />
+          ))}
+        </main>
       </div>
     </div>
   );
