@@ -1,10 +1,10 @@
 export const nav = {
-  OPEN: "OPEN_NAV",
-  CLOSE: "CLOSE_NAV",
+  open: "open_nav",
+  close: "close_nav",
 };
 export const overlay = {
-  OPEN: "OPEN_OVERLAY",
-  CLOSE: "CLOSE_OVERLAY",
+  open: "open_overlay",
+  close: "close_overlay",
 };
 
 const ACTION = {
