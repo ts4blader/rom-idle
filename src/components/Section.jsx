@@ -7,10 +7,13 @@ function Section({ content, gear }) {
   const [state, dispatch] = React.useContext(StoreContext);
   const [current, setCurrent] = React.useState(0);
 
-  setTimeout(() => {
-    if (current === content.images.length - 1) setCurrent(0);
-    else setCurrent(current + 1);
-  }, 10000);
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      if (current === content.images.length - 1) setCurrent(0);
+      else setCurrent(current + 1);
+    }, 10000);
+    return () => clearTimeout(timer);
+  }, [current]);
 
   const image = require("../res/images/" + content.images[current]).default;
 
