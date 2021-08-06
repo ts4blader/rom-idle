@@ -15,6 +15,7 @@ function Section({ content, gear }) {
 
   return (
     <div className={`${gear}-section section`}>
+      <div className="header-placehodler" style={{}}></div>
       <div className="section__bg" style={bg}>
         <div className="section__bg__overlay"></div>
       </div>
