@@ -1,0 +1,55 @@
+.n3ds-section {
+    .container {
+        margin: 55%;
+    }
+    .section__bg {
+        width: 50%;
+        height: 100vh;
+    }
+    .section__caption {
+        flex-direction: column;
+        margin-bottom: 5 * $size;
+    }
+    .section__title {
+        transform: unset;
+    }
+    .section__subtitle {
+        margin-bottom: 1 * $size;
+    }
+    .section__description {
+        width: 60 * $size;
+        margin-bottom: 6 * $size;
+    }
+    .button {
+        width: 50%;
+    }
+    .row.bottom {
+        position: absolute;
+        top: 50%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        .section__gallery {
+            flex-direction: column;
+        }
+        .section__rom-name {
+            position: absolute;
+            top: 105%;
+            right: 0;
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .n3ds-section {
+        .section__caption {
+            margin-bottom: 5 * $size;
+        }
+        .section__subtitle {
+            margin-bottom: 1 * $size;
+        }
+        .section__description {
+            width: 65 * $size;
+            margin-bottom: 6 * $size;
+        }
+    }
+}

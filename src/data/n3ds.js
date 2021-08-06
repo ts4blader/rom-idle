@@ -1,6 +1,6 @@
 const N3DS = {
-  title: "nintendo 3ds",
-  subtitle: "let's play",
+  title: "nintendo 3DS",
+  subtitle: "browse ROM",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
 
@@ -17,7 +17,7 @@ const N3DS = {
     "super smash bros 3DS",
     "fire emble - awakening",
   ],
-  coodinates: ["0% 0%", "0% 0%", "0% 0%", "0% 0%"],
+  coodinates: ["35% 0%", "30% 0%", "50% 0%", "70% 0%"],
 };
 
 export default N3DS;
