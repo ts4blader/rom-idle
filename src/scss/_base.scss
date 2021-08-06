@@ -35,10 +35,10 @@ a {
     max-width: 1920px;
 }
 .container {
-    width: 83%;
-    padding: 0 2rem;
+    width: 80%;
     margin: 0 auto;
     @include responsive($break-point-sm) {
         width: 80%;
+        padding: 0 2rem;
     }
 }

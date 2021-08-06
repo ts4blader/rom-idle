@@ -4,6 +4,7 @@ import Reducer from "./Reducer";
 export const StoreContext = React.createContext({});
 
 const initial = {
+  headerHeight: 0,
   openNav: false,
 };
 

@@ -1,9 +1,16 @@
 import React from "react";
 import Button from "../components/Button";
 import Image from "../components/Image";
+import { StoreContext } from "../Store";
 
 function Section({ content, gear }) {
+  const [state, dispatch] = React.useContext(StoreContext);
   const [current, setCurrent] = React.useState(0);
+
+  setTimeout(() => {
+    if (current === content.images.length - 1) setCurrent(0);
+    else setCurrent(current + 1);
+  }, 7000);
 
   const image = require("../res/images/" + content.images[current]).default;
 
@@ -15,11 +22,15 @@ function Section({ content, gear }) {
 
   return (
     <div className={`${gear}-section section`}>
-      <div className="header-placehodler" style={{}}></div>
       <div className="section__bg" style={bg}>
         <div className="section__bg__overlay"></div>
       </div>
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          marginTop: state.headerHeight + "px",
+        }}
+      >
         {/* Background section  */}
 
         <div className="row section__caption">

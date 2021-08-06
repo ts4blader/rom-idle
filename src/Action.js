@@ -7,9 +7,14 @@ export const overlay = {
   close: "close_overlay",
 };
 
+export const headerHeight = {
+  set: "set_header_height",
+};
+
 const ACTION = {
   nav,
   overlay,
+  headerHeight,
 };
 
 export default ACTION;

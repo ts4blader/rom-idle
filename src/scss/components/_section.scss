@@ -11,9 +11,6 @@ main {
     height: 100vh;
     display: flex;
     align-items: center;
-    // .container {
-    //     margin-top: 15vh;
-    // }
     &__caption {
         text-transform: capitalize;
         font-size: 7 * $size;
