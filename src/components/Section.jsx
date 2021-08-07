@@ -13,7 +13,7 @@ function Section({ content, gear }) {
       else setCurrent(current + 1);
     }, 10000);
     return () => clearTimeout(timer);
-  }, [current]);
+  }, [current, content.images.length]);
 
   const image = require("../res/images/" + content.images[current]).default;
 
