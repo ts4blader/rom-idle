@@ -19,6 +19,12 @@ body {
     line-height: 1.25;
     overflow-x: hidden;
 }
+input,
+select,
+textarea,
+button {
+    font-family: $sub-font;
+}
 
 img {
     display: block;

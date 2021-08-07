@@ -20,7 +20,7 @@ function Section({ content, gear }) {
   const bg = {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
-    backgroundPosition: ` ${content.coodinates[current]}`,
+    backgroundPosition: `${content.coodinates[current]}`,
   };
 
   return (

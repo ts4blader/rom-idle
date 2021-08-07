@@ -1,10 +1,11 @@
-.button {
+.button,
+button {
+    background: transparent;
     position: relative;
     text-align: center;
     padding: 2.5 * $size;
     cursor: pointer;
     text-transform: capitalize;
-    overflow: hidden;
     p {
         font-size: 3 * $size;
         font-weight: 800;

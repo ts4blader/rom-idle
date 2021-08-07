@@ -1,0 +1,66 @@
+.feedback-section {
+    .section__bg {
+        width: 100 * $size;
+        height: 100vh;
+        right: 5.5 * $size;
+    }
+    .form {
+        font-weight: 600;
+        font-size: 2 * $size;
+        width: 85 * $size;
+        .field:nth-child(2) {
+            p {
+                margin-top: 1.5 * $size;
+                align-self: flex-start;
+            }
+        }
+        .button {
+            width: 50%;
+            border: none;
+            color: white;
+        }
+        .field {
+            margin: 3 * $size 0;
+            select,
+            textarea {
+                font-size: 2 * $size;
+                width: 100%;
+                padding: 1.5 * $size 2 * $size;
+                border: none;
+                background: white;
+                resize: none;
+            }
+            @include flex(space-between, row);
+            .input {
+                width: 50%;
+            }
+            #radio-grp {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+@include responsive(1600px) {
+    $size: $size-md;
+    .feedback-section {
+        .section__bg {
+            width: 100 * $size;
+            right: 5.5 * $size;
+        }
+        .form {
+            .field:nth-child(2) {
+                p {
+                    margin-top: 1.5 * $size;
+                }
+            }
+            .field {
+                margin: 3 * $size 0;
+                select,
+                textarea {
+                    padding: 1.5 * $size 2 * $size;
+                }
+            }
+        }
+    }
+}

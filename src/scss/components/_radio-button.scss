@@ -1,0 +1,28 @@
+.radio-button {
+    @include flex(center, row);
+    label {
+        font-weight: 600;
+        margin-left: $size;
+    }
+    input[type="radio"] {
+        display: none;
+        &:checked + .circle {
+            &::after {
+                background: $bg-color;
+            }
+            border: 2px solid #2980b9;
+        }
+    }
+    .circle {
+        @include size(2 * $size);
+        border-radius: 50%;
+        background: white;
+        position: relative;
+        &::after {
+            content: "";
+            border-radius: 50%;
+            @include absoluteCenter();
+            @include size(1 * $size);
+        }
+    }
+}
