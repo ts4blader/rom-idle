@@ -12,11 +12,12 @@ function FeedBack() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm();
 
   const submit = (data) => {
-    console.log(data);
+    reset();
   };
 
   const bg = {
