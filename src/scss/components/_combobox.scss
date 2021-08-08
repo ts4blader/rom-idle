@@ -1,0 +1,23 @@
+.combobox {
+    position: relative;
+    &:hover {
+        .caret {
+            background: rgb(214, 214, 214);
+        }
+    }
+    .caret {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        padding: $size 1.5 * $size;
+        background: white;
+        pointer-events: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon {
+            @include size(2 * $size);
+        }
+    }
+}

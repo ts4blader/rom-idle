@@ -1,15 +1,16 @@
 import React from "react";
 
-const RadioButton = ({ id, label, checked = true }) => {
-  id = "radio-" + id;
+const RadioButton = ({ id, label, register }) => {
+  id = "rate-" + id;
   return (
     <div className="radio-button">
       <input
         type="radio"
-        checked={checked}
         name="radio-grp"
         id={id}
         value={id}
+        defaultChecked
+        {...register("rate")}
       />
       <div className="circle"></div>
       <label htmlFor={id}>{label}</label>

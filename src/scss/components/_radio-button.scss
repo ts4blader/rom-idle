@@ -1,8 +1,10 @@
 .radio-button {
     @include flex(center, row);
+    position: relative;
     label {
+        width: 100%;
         font-weight: 600;
-        margin-left: $size;
+        padding-left: $size * 3;
     }
     input[type="radio"] {
         display: none;
@@ -14,10 +16,12 @@
         }
     }
     .circle {
+        pointer-events: none;
         @include size(2 * $size);
         border-radius: 50%;
         background: white;
-        position: relative;
+        @include absoluteCenter("ver");
+        left: 0;
         &::after {
             content: "";
             border-radius: 50%;

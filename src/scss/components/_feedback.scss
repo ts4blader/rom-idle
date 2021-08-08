@@ -30,6 +30,10 @@
                 background: white;
                 resize: none;
             }
+            .error {
+                color: $primary-color;
+                text-decoration: underline;
+            }
             @include flex(space-between, row);
             .input {
                 width: 50%;
