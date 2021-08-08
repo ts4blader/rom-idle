@@ -48,3 +48,13 @@ a {
         padding: 0 2rem;
     }
 }
+.hide-on-sm {
+    @include responsive($break-point-sm) {
+        display: none;
+    }
+}
+.hide-on-md {
+    @include responsive($break-point-md) {
+        display: none;
+    }
+}
