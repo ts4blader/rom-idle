@@ -8,6 +8,7 @@
     background: $primary-color;
     padding: 1.25 * $size 2.5 * $size;
     &__dot {
+        cursor: pointer;
         @include size(2 * $size);
         background: white;
         border-radius: 50%;

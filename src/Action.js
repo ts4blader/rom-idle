@@ -10,11 +10,15 @@ export const overlay = {
 export const headerHeight = {
   set: "set_header_height",
 };
+export const sectionHeight = {
+  set: "set_section_height",
+};
 
 const ACTION = {
   nav,
   overlay,
   headerHeight,
+  sectionHeight,
 };
 
 export default ACTION;

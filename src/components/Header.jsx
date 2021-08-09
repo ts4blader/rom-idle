@@ -11,7 +11,6 @@ function Header() {
   React.useEffect(() => {
     const height = header.current.offsetHeight + header.current.offsetTop * 1;
     dispatch({ type: ACTION.headerHeight.set, payload: height });
-    console.log(state.headerHeight);
   }, []);
 
   return (

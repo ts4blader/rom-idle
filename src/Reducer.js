@@ -6,6 +6,8 @@ const Reducer = (state, action) => {
       return { ...state, openNav: true };
     case ACTION.headerHeight.set:
       return { ...state, headerHeight: action.payload };
+    case ACTION.sectionHeight:
+      return { ...state, sectionHeight: action.payload };
     default:
       alert("Action is not supported");
   }

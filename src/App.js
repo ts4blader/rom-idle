@@ -1,3 +1,4 @@
+import React from "react";
 import Header from "./components/Header";
 import Social from "./components/Social";
 import Section from "./components/Section";
@@ -9,6 +10,7 @@ import N3DS from "./data/n3ds";
 import "./scss/main.scss";
 
 function App() {
+  const main = React.useRef(null);
   const content = [
     {
       gear: "psp",
@@ -24,17 +26,25 @@ function App() {
     },
   ];
 
+  const scroll = (n) => {
+    main.current.scrollTo({
+      top: n * main.current.clientHeight,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="app" id="app">
       <div className="wrapper">
         <Header />
         <Social />
-        <Indicator length={content.length} />
-        <main>
+        <main ref={main}>
           {content.map((item, index) => (
             <Section content={item.data} gear={item.gear} key={index} />
           ))}
           <FeedBack />
+          <Indicator length={content.length} scrollTo={scroll} />
         </main>
       </div>
     </div>
