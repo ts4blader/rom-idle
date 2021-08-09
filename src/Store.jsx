@@ -6,7 +6,9 @@ export const StoreContext = React.createContext({});
 const initial = {
   sectionHeight: 0,
   headerHeight: 0,
-  openNav: false,
+  showMenu: false,
+  showOverlay: false,
+  overlayAction: null,
 };
 
 const Store = ({ children }) => {

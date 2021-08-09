@@ -50,3 +50,19 @@
         }
     }
 }
+@include responsive($break-point-sm) {
+    .nav {
+        width: 100%;
+        ul {
+            flex-direction: column;
+            li {
+                p {
+                    font-size: 3 * $size;
+                    font-weight: bold;
+                    margin: $size 0;
+                    padding: 2 * $size 2 * $size;
+                }
+            }
+        }
+    }
+}

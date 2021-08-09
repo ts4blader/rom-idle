@@ -15,3 +15,22 @@
         }
     }
 }
+@include responsive($break-point-sm) {
+    .social {
+        all: unset;
+        position: absolute;
+        bottom: 5%;
+        &__item {
+            width: 2 * $size;
+            margin: 0 $size;
+        }
+        &::after {
+            content: "";
+            @include absoluteCenter("hor");
+            bottom: 200%;
+            width: 50%;
+            height: 5px;
+            background: $primary-color;
+        }
+    }
+}

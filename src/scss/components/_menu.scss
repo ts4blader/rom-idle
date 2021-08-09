@@ -1,0 +1,28 @@
+.menu {
+    position: relative;
+    transition: all 300ms ease;
+    &.hide {
+        transform: translateX(100%);
+    }
+}
+@include responsive($break-point-sm) {
+    .menu {
+        &__close {
+            cursor: pointer;
+            display: block;
+            position: absolute;
+            top: 5%;
+            right: 10%;
+            width: 3 * $size;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background: $sub-color;
+    }
+}

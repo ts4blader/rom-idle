@@ -1,6 +1,6 @@
 .indicator {
     position: fixed;
-    z-index: $gold-lever;
+    z-index: $gold-lever - 1;
     width: max-content;
     right: 0;
     top: 50%;

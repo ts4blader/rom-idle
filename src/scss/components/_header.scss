@@ -32,3 +32,12 @@
         top: 6 * $size;
     }
 }
+@include responsive($break-point-sm) {
+    .header {
+        &__menu {
+            display: block;
+            cursor: pointer;
+            width: 4 * $size;
+        }
+    }
+}

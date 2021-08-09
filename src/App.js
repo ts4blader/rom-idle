@@ -1,9 +1,9 @@
 import React from "react";
 import Header from "./components/Header";
-import Social from "./components/Social";
 import Section from "./components/Section";
 import Indicator from "./components/Indicator";
 import FeedBack from "./components/FeedBack";
+import Overlay from "./components/Overlay";
 import PSP from "./data/psp";
 import SNES from "./data/snes";
 import N3DS from "./data/n3ds";
@@ -36,9 +36,9 @@ function App() {
 
   return (
     <div className="app" id="app">
+      <Overlay />
       <div className="wrapper">
         <Header />
-        <Social />
         <main ref={main}>
           {content.map((item, index) => (
             <Section content={item.data} gear={item.gear} key={index} />
