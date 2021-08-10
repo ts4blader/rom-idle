@@ -53,6 +53,35 @@
         }
     }
 }
+@include responsive($break-point-md) {
+    .n3ds-section.section {
+        .container {
+            margin-left: 55%;
+            margin-bottom: 10 * $size;
+        }
+        .section__subtitle {
+            margin-bottom: 0;
+        }
+        .section__description {
+            width: 70%;
+        }
+        .button {
+            width: 50% !important;
+        }
+        .row.bottom {
+            position: absolute;
+            top: unset;
+            left: unset;
+            right: 10%;
+            bottom: 5%;
+            transform: unset;
+            .section__rom-name {
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+}
 @include responsive($break-point-sm) {
     .n3ds-section.section {
         .container {

@@ -40,7 +40,7 @@ main {
             top: 0;
             left: 0;
             @include size(100%);
-            z-index: $stone-lever;
+            z-index: $wood-lever + 1;
             background: rgba($color: $sub-color, $alpha: 0.25);
         }
     }
@@ -56,15 +56,27 @@ main {
         }
     }
 }
-@include responsive($break-point-sm) {
+@include responsive($break-point-md) {
     .section {
         &__caption {
             flex-direction: column;
-            font-size: 4 * $size !important;
-            line-height: 1.5 !important;
+            font-size: 6 * $size !important;
         }
         &__title {
             transform: unset;
+        }
+        &__description {
+            font-size: 2.2 * $size;
+            line-height: 1.5;
+        }
+        .button {
+            width: 40% !important;
+        }
+    }
+}
+@include responsive($break-point-sm) {
+    .section {
+        &__caption {
             font-size: 4 * $size !important;
         }
         &__description {

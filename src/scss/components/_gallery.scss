@@ -4,7 +4,7 @@
         padding: 1.5 * $size 2 * $size;
         &__item {
             cursor: pointer;
-            width: 20 * $size;
+            max-width: 20 * $size;
             margin: 2 * $size;
             position: relative;
             &::after {
@@ -29,7 +29,7 @@
         &__gallery {
             padding: 1.5 * $size 2 * $size;
             &__item {
-                width: 23 * $size;
+                max-width: 23 * $size;
                 margin: 2 * $size;
                 &::after {
                     left: -(1.5 * $size);

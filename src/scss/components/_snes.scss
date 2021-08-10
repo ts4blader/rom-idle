@@ -74,17 +74,41 @@
         }
     }
 }
+@include responsive($break-point-md) {
+    .snes-section {
+        .section__bg {
+            left: 5%;
+            width: 60%;
+        }
+        .section__title {
+            font-size: 6 * $size;
+            width: 80%;
+        }
+        .section__description {
+            width: auto;
+            left: 60%;
+            top: 10%;
+        }
+        .button {
+            left: 60%;
+            top: 50%;
+        }
+        .row.bottom {
+            margin-top: 10 * $size;
+            margin-left: auto;
+        }
+    }
+}
 @include responsive($break-point-sm) {
     .snes-section {
         .section__bg {
             left: unset;
         }
         .section__title {
-            width: 80%;
+            font-size: 4 * $size;
         }
         .section__description {
             position: relative;
-            width: auto;
             left: 0;
             top: 0;
         }
@@ -94,6 +118,7 @@
             top: 0;
         }
         .row.bottom {
+            margin-top: 0;
             margin-left: 0;
         }
     }

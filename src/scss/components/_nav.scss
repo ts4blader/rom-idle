@@ -50,7 +50,7 @@
         }
     }
 }
-@include responsive($break-point-sm) {
+@include responsive($break-point-md) {
     .nav {
         width: 100%;
         ul {
@@ -59,8 +59,20 @@
                 margin: 0;
                 p {
                     width: 100%;
-                    font-size: 3 * $size;
+                    font-size: 4 * $size;
                     font-weight: bold;
+                    padding: 4 * $size;
+                }
+            }
+        }
+    }
+}
+@include responsive($break-point-sm) {
+    .nav {
+        ul {
+            li {
+                p {
+                    font-size: 3 * $size;
                     padding: 2 * $size 2 * $size;
                 }
             }

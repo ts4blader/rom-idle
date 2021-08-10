@@ -32,6 +32,15 @@
         top: 6 * $size;
     }
 }
+@include responsive($break-point-md) {
+    .header {
+        &__menu {
+            display: block;
+            cursor: pointer;
+            width: 6 * $size;
+        }
+    }
+}
 @include responsive($break-point-sm) {
     .header {
         &__menu {
@@ -39,10 +48,6 @@
             cursor: pointer;
             width: 4 * $size;
         }
-    }
-}
-@include responsive($break-point-sm) {
-    .header {
         top: 3 * $size;
         margin-bottom: 3 * $size;
         .container {

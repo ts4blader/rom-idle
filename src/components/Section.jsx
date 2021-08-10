@@ -47,7 +47,7 @@ function Section({ content, gear }) {
 
         <div className="row bottom">
           {/* gallery  */}
-          <div className="section__gallery row hide-on-sm">
+          <div className="section__gallery row hide-on-md">
             {content.images.map((item, index) => {
               const className =
                 current === index

@@ -15,14 +15,14 @@
         }
     }
 }
-@include responsive($break-point-sm) {
+@include responsive($break-point-md) {
     .social {
         all: unset;
         position: absolute;
         bottom: 5%;
         &__item {
-            width: 2 * $size;
-            margin: 0 $size;
+            width: 4 * $size;
+            margin: 0 2 * $size;
         }
         &::after {
             content: "";
@@ -31,6 +31,14 @@
             width: 50%;
             height: 5px;
             background: $primary-color;
+        }
+    }
+}
+@include responsive($break-point-sm) {
+    .social {
+        &__item {
+            width: 2 * $size;
+            margin: 0 $size;
         }
     }
 }

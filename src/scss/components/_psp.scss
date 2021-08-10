@@ -38,6 +38,22 @@
         }
     }
 }
+@include responsive($break-point-md) {
+    .psp-section {
+        .button {
+            margin-bottom: 5 * $size;
+        }
+        .row.bottom {
+            width: 100%;
+        }
+        .section__rom-name {
+            margin-left: auto;
+        }
+        .section__bg {
+            width: 60%;
+        }
+    }
+}
 @include responsive($break-point-sm) {
     .psp-section {
         .section__title {
@@ -45,9 +61,6 @@
         }
         .button {
             margin-bottom: 3 * $size;
-        }
-        .section__rom-name {
-            margin-left: auto;
         }
     }
 }
