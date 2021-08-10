@@ -39,4 +39,15 @@
     }
 }
 @include responsive($break-point-sm) {
+    .psp-section {
+        .section__title {
+            width: 80%;
+        }
+        .button {
+            margin-bottom: 3 * $size;
+        }
+        .section__rom-name {
+            margin-left: auto;
+        }
+    }
 }

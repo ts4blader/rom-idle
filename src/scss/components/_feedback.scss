@@ -7,17 +7,17 @@
     .form {
         font-weight: 600;
         font-size: 2 * $size;
-        width: 85 * $size;
+        max-width: 85 * $size;
+        .button {
+            width: 50%;
+            border: none;
+            color: white;
+        }
         .field:nth-child(2) {
             p {
                 margin-top: 1.5 * $size;
                 align-self: flex-start;
             }
-        }
-        .button {
-            width: 50%;
-            border: none;
-            color: white;
         }
         .field {
             margin: 3 * $size 0;
@@ -63,6 +63,31 @@
                 select,
                 textarea {
                     padding: 1.5 * $size 2 * $size;
+                }
+            }
+        }
+    }
+}
+@include responsive($break-point-sm) {
+    .feedback-section {
+        .form {
+            .button {
+                margin-top: 1.5 * $size;
+            }
+            .field {
+                p {
+                    margin: $size 0;
+                }
+                flex-direction: column;
+                align-items: flex-start;
+                margin: 0;
+                select,
+                textarea {
+                    font-size: 1.5 * $size;
+                    padding: $size;
+                }
+                .input {
+                    width: 100%;
                 }
             }
         }

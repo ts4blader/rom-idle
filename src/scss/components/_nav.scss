@@ -5,13 +5,13 @@
         li {
             overflow: hidden;
             position: relative;
+            margin: 0 4 * $size;
             p {
                 text-transform: capitalize;
                 cursor: pointer;
                 font-size: 3 * $size;
                 font-weight: 600;
                 padding: $size 3 * $size;
-                margin: 0 4 * $size;
                 transition: transform 0.3s ease;
             }
             p:nth-child(2) {
@@ -38,13 +38,13 @@
     .nav {
         ul {
             li {
+                margin: 0 4 * $size;
                 p {
                     text-transform: capitalize;
                     cursor: pointer;
                     font-size: 3 * $size;
                     font-weight: 600;
                     padding: $size 3 * $size;
-                    margin: 0 4 * $size;
                 }
             }
         }
@@ -56,10 +56,11 @@
         ul {
             flex-direction: column;
             li {
+                margin: 0;
                 p {
+                    width: 100%;
                     font-size: 3 * $size;
                     font-weight: bold;
-                    margin: $size 0;
                     padding: 2 * $size 2 * $size;
                 }
             }

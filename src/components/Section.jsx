@@ -47,7 +47,7 @@ function Section({ content, gear }) {
 
         <div className="row bottom">
           {/* gallery  */}
-          <div className="section__gallery row">
+          <div className="section__gallery row hide-on-sm">
             {content.images.map((item, index) => {
               const className =
                 current === index
@@ -66,9 +66,9 @@ function Section({ content, gear }) {
           </div>
           {/* ROM name  */}
           <div className="section__rom-name">
-            <div className="bar"></div>
+            <div className="bar hide-on-sm"></div>
             <p className="text">{content.roms[current]}</p>
-            <div className="bar"></div>
+            <div className="bar hide-on-sm"></div>
           </div>
         </div>
       </div>

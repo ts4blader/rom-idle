@@ -74,3 +74,27 @@
         }
     }
 }
+@include responsive($break-point-sm) {
+    .snes-section {
+        .section__bg {
+            left: unset;
+        }
+        .section__title {
+            width: 80%;
+        }
+        .section__description {
+            position: relative;
+            width: auto;
+            left: 0;
+            top: 0;
+        }
+        .button {
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+        .row.bottom {
+            margin-left: 0;
+        }
+    }
+}

@@ -1,12 +1,12 @@
 .menu {
     position: relative;
     transition: all 300ms ease;
-    &.hide {
-        transform: translateX(100%);
-    }
 }
 @include responsive($break-point-sm) {
     .menu {
+        &.hide {
+            transform: translateX(100%);
+        }
         &__close {
             cursor: pointer;
             display: block;

@@ -7,6 +7,7 @@ main {
 .section {
     position: relative;
     scroll-snap-align: start;
+    overflow-x: hidden;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -52,6 +53,36 @@ main {
         }
         &__caption {
             font-size: 8 * $size;
+        }
+    }
+}
+@include responsive($break-point-sm) {
+    .section {
+        &__caption {
+            flex-direction: column;
+            font-size: 4 * $size !important;
+            line-height: 1.5 !important;
+        }
+        &__title {
+            transform: unset;
+            font-size: 4 * $size !important;
+        }
+        &__description {
+            font-size: 1.6 * $size !important;
+            width: 80% !important;
+        }
+        .button {
+            width: 70% !important;
+        }
+        &__bg {
+            width: 70vw !important;
+            height: 80vh !important;
+            right: 0 !important;
+            bottom: 0 !important;
+        }
+        &__rom-name {
+            width: 80% !important;
+            align-items: flex-end !important;
         }
     }
 }

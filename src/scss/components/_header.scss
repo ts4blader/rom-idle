@@ -41,3 +41,14 @@
         }
     }
 }
+@include responsive($break-point-sm) {
+    .header {
+        top: 3 * $size;
+        margin-bottom: 3 * $size;
+        .container {
+            .logo {
+                width: 7 * $size;
+            }
+        }
+    }
+}
