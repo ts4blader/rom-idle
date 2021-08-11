@@ -3,9 +3,9 @@
         position: relative;
     }
     .section__bg {
-        width: 100 * $size;
+        width: 55%;
         height: 100vh;
-        left: 12 * $size;
+        left: 6%;
     }
     .section__subtitle {
         color: $primary-color;
@@ -48,11 +48,6 @@
 @include responsive(1600px) {
     $size: $size-md;
     .snes-section {
-        .section__bg {
-            width: 100 * $size;
-            height: 100vh;
-            left: 12 * $size;
-        }
         .section__subtitle {
             font-size: 3 * $size;
         }

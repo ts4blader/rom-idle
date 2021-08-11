@@ -1,13 +1,13 @@
 .feedback-section {
     .section__bg {
-        width: 100 * $size;
+        width: 50%;
         height: 100vh;
-        right: 5.5 * $size;
+        right: 2%;
     }
     .form {
         font-weight: 600;
-        font-size: 2 * $size;
-        max-width: 85 * $size;
+        font-size: 2.5 * $size;
+        max-width: 95 * $size;
         .button {
             width: 50%;
             border: none;
@@ -23,7 +23,7 @@
             margin: 3 * $size 0;
             select,
             textarea {
-                font-size: 2 * $size;
+                font-size: 2.5 * $size;
                 width: 100%;
                 padding: 1.5 * $size 2 * $size;
                 border: none;
@@ -48,11 +48,9 @@
 @include responsive(1600px) {
     $size: $size-md;
     .feedback-section {
-        .section__bg {
-            width: 100 * $size;
-            right: 5.5 * $size;
-        }
         .form {
+            max-width: 95 * $size;
+            font-size: 2.5 * $size;
             .field:nth-child(2) {
                 p {
                     margin-top: 1.5 * $size;
@@ -62,9 +60,17 @@
                 margin: 3 * $size 0;
                 select,
                 textarea {
+                    font-size: 2.5 * $size;
                     padding: 1.5 * $size 2 * $size;
                 }
             }
+        }
+    }
+}
+@include responsive($break-point-md) {
+    .feedback-section {
+        .section__bg {
+            width: 60%;
         }
     }
 }

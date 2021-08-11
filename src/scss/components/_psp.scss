@@ -11,7 +11,7 @@
         margin-bottom: 6.5 * $size;
     }
     .section__bg {
-        width: 80 * $size;
+        width: 50%;
         height: 100vh;
         right: 5.5 * $size;
     }
@@ -33,7 +33,6 @@
             margin-bottom: 6.5 * $size;
         }
         .section__bg {
-            width: 100 * $size;
             right: 4.5 * $size;
         }
     }
