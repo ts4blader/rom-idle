@@ -9,6 +9,7 @@ const initial = {
   showMenu: false,
   showOverlay: false,
   overlayAction: null,
+  loading: true,
 };
 
 const Store = ({ children }) => {

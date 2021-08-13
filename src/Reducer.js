@@ -2,6 +2,11 @@ import ACTION from "./Action";
 
 const Reducer = (state, action) => {
   switch (action.type) {
+    //loading
+    case ACTION.loader.show:
+      return { ...state, loading: true };
+    case ACTION.loader.hide:
+      return { ...state, loading: false };
     // Menu
     case ACTION.menu.open:
       return { ...state, showMenu: true };

@@ -20,12 +20,18 @@ export const sectionHeight = {
   set: "set_section_height",
 };
 
+export const loader = {
+  show: "loader_show",
+  hide: "loader_hide",
+};
+
 const ACTION = {
   menu,
   overlay,
   headerHeight,
   sectionHeight,
   overlay_action,
+  loader,
 };
 
 export default ACTION;
