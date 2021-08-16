@@ -14,27 +14,42 @@
         position: relative;
         align-items: center;
         .text {
+            width: 100vw;
+            text-align: center;
+            overflow: hidden;
             position: relative;
             font-size: 10 * $size;
             font-weight: bold;
             margin-left: 4 * $size;
             letter-spacing: 2px;
-            overflow: hidden;
-            p:nth-child(2) {
+            .logo {
+                display: flex;
+                align-items: center;
                 position: absolute;
-                width: 100%;
                 height: 100%;
                 top: 100%;
-                left: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                text-decoration: 5px underline;
+                .icon {
+                    width: 100px;
+                    margin-right: 3 * $size;
+                }
+            }
+            .dot {
+                display: inline-block;
+            }
+            .dot:first-child {
+                margin-left: $size;
             }
         }
-        &::after {
-            content: "loaded";
+        .loaded {
             color: $bg-color;
             font-weight: 600;
             font-size: 3 * $size;
             @include absoluteCenter("hor");
-            top: 110%;
+            top: 150%;
+            opacity: 0;
         }
     }
 }
