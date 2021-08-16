@@ -22,8 +22,8 @@ const LoadingAnimation = () => {
   );
 };
 
-export const CompleteLoading = () => {
-  let complete = gsap.timeline({});
+export const CompleteLoading = (endFunction) => {
+  let complete = gsap.timeline({ onComplete: endFunction });
   complete
     .to(".loading .logo, .loading__text", 1, {
       yPercent: "-100",

@@ -1,5 +1,6 @@
 import React from "react";
 import { StoreContext } from "../Store";
+import ACTION from "../Action";
 import LoadingAnimation, { CompleteLoading } from "../animations/Loading";
 import Icon from "../components/Icon";
 
@@ -7,7 +8,12 @@ function Loading() {
   const [state, dispatch] = React.useContext(StoreContext);
 
   React.useEffect(() => {
-    CompleteLoading();
+    LoadingAnimation();
+    window.addEventListener("load", () => {
+      CompleteLoading(() => {
+        dispatch({ type: ACTION.loader.hide });
+      });
+    });
   }, []);
 
   return (
