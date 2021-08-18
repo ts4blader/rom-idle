@@ -34,6 +34,7 @@ main::-webkit-scrollbar {
     &__description {
         font-size: 3 * $size;
         font-family: $sub-font;
+        line-height: 1.5;
     }
     .row.bottom {
         width: max-content;
@@ -94,7 +95,7 @@ main::-webkit-scrollbar {
             width: 70% !important;
         }
         &__bg {
-            width: 70vw !important;
+            width: 70vw;
             height: 80vh !important;
             right: 0 !important;
             bottom: 0 !important;

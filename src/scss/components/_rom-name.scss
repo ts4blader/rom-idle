@@ -1,6 +1,7 @@
 .section {
     &__rom-name {
         width: 50 * $size;
+        overflow: hidden;
         @include flex(center, row);
         .text {
             margin: 0 1.5 * $size;

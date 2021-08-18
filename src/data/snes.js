@@ -3,7 +3,7 @@ const SNES = {
   title: "nintendo entertainment system",
   subtitle: "super",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+    "The Super NES Classic Edition system looks and feels just like the original ’90s home console, except it’s super small. ",
 
   cta: "explore",
   images: [
@@ -20,7 +20,7 @@ const SNES = {
   ],
   coodinates: ["0% 0%", "80% 0%", "80% 0%", "10% 0%"],
   widths: {
-    mobile: "80%",
+    mobile: "70%",
     tablet: "60%",
     desktop: "55%",
   },

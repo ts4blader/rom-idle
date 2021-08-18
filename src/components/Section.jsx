@@ -2,19 +2,27 @@ import React from "react";
 import Button from "../components/Button";
 import Image from "../components/Image";
 import { StoreContext } from "../Store";
-import { showBG, hideBG, clearAll } from "../animations/Section";
+import { showBG, hideBG } from "../animations/Section";
 
 function Section({ content }) {
   const [state, dispatch] = React.useContext(StoreContext);
   const [current, setCurrent] = React.useState(0);
 
   React.useEffect(() => {
-    showBG(content.gear, content.widths);
-    hideBG(content.gear, () => {
+    // init all animation
+    let show = showBG(content.gear, content.widths);
+    let hide = hideBG(content.gear, () => {
+      //* On Complete Function
       if (current === content.images.length - 1) setCurrent(0);
       else setCurrent(current + 1);
+      //* End On Complete
     });
-    return () => clearAll();
+
+    return () => {
+      //* clear all timeline
+      show.clear();
+      hide.clear();
+    };
   }, [current]);
 
   const image = require("../res/images/" + content.images[current]).default;

@@ -3,7 +3,7 @@ const PSP = {
   title: "playstation portable",
   subtitle: "let's play",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+    "The PSP, a combination game system and media player, wasn't the most popular handheld system.",
   cta: "explore",
   images: [
     "gow.jpg",
@@ -19,7 +19,7 @@ const PSP = {
   ],
   coodinates: ["0% 0%", "80% 0%", "50% 0%", "20% 0%"],
   widths: {
-    mobile: "80%",
+    mobile: "70%",
     tablet: "60%",
     desktop: "50%",
   },
