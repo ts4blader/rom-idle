@@ -19,6 +19,11 @@ const N3DS = {
     "fire emble - awakening",
   ],
   coodinates: ["35% 0%", "30% 0%", "50% 0%", "70% 0%"],
+  widths: {
+    mobile: "80%",
+    tablet: "50%",
+    desktop: "50%",
+  },
 };
 
 export default N3DS;

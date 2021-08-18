@@ -18,6 +18,11 @@ const PSP = {
     "kingdom heart - birth by sleep",
   ],
   coodinates: ["0% 0%", "80% 0%", "50% 0%", "20% 0%"],
+  widths: {
+    mobile: "80%",
+    tablet: "60%",
+    desktop: "50%",
+  },
 };
 
 export default PSP;

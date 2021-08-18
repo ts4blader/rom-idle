@@ -2,25 +2,24 @@ import React from "react";
 import Button from "../components/Button";
 import Image from "../components/Image";
 import { StoreContext } from "../Store";
-import { showBg, hideBg, clearHideTL } from "../animations/Section";
+import { showBG, hideBG, clearAll } from "../animations/Section";
 
 function Section({ content }) {
   const [state, dispatch] = React.useContext(StoreContext);
   const [current, setCurrent] = React.useState(0);
 
   React.useEffect(() => {
-    showBg();
-    hideBg(() => {
+    showBG(content.gear, content.widths);
+    hideBG(content.gear, () => {
       if (current === content.images.length - 1) setCurrent(0);
       else setCurrent(current + 1);
     });
-
-    return () => clearHideTL();
+    return () => clearAll();
   }, [current]);
 
   const image = require("../res/images/" + content.images[current]).default;
 
-  const bg = {
+  const bgStyle = {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
     backgroundPosition: `${content.coodinates[current]}`,
@@ -28,7 +27,7 @@ function Section({ content }) {
 
   return (
     <div className={`${content.gear}-section section`}>
-      <div className="section__bg" style={bg}>
+      <div className="section__bg" style={bgStyle}>
         <div className="section__bg__overlay"></div>
       </div>
       <div

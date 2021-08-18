@@ -19,6 +19,11 @@ const SNES = {
     "teenage mutant ninja turtles - turtles in time",
   ],
   coodinates: ["0% 0%", "80% 0%", "80% 0%", "10% 0%"],
+  widths: {
+    mobile: "80%",
+    tablet: "60%",
+    desktop: "55%",
+  },
 };
 
 export default SNES;
