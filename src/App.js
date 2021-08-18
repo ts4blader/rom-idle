@@ -12,20 +12,7 @@ import "./scss/main.scss";
 
 function App() {
   const main = React.useRef(null);
-  const content = [
-    {
-      gear: "psp",
-      data: PSP,
-    },
-    {
-      gear: "snes",
-      data: SNES,
-    },
-    {
-      gear: "n3ds",
-      data: N3DS,
-    },
-  ];
+  const content = [PSP, SNES, N3DS];
 
   const scroll = (n) => {
     main.current.scrollTo({
@@ -43,7 +30,7 @@ function App() {
         <Header />
         <main ref={main}>
           {content.map((item, index) => (
-            <Section content={item.data} gear={item.gear} key={index} />
+            <Section content={item} key={index} />
           ))}
           <FeedBack />
           <Indicator length={content.length} scrollTo={scroll} />

@@ -1,4 +1,5 @@
 const N3DS = {
+  gear: "n3ds",
   title: "nintendo 3DS",
   subtitle: "browse ROM",
   description:

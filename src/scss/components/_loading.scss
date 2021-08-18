@@ -18,11 +18,9 @@
             text-align: center;
             overflow: hidden;
             position: relative;
-            font-size: 10 * $size;
             font-weight: bold;
-            margin-left: 4 * $size;
-            letter-spacing: 2px;
             .logo {
+                font-size: 10 * $size;
                 display: flex;
                 align-items: center;
                 position: absolute;
@@ -36,10 +34,9 @@
                 }
             }
             .dot {
+                font-size: 15 * $size;
                 display: inline-block;
-            }
-            .dot:first-child {
-                margin-left: $size;
+                margin: $size * 0.5;
             }
         }
         .loaded {

@@ -22,7 +22,6 @@ function Loading() {
         <div className="loading__wrapper">
           <div className="text">
             <p className="loading__text">
-              Loading
               <span className="dot">.</span>
               <span className="dot">.</span>
               <span className="dot">.</span>

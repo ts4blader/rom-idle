@@ -1,4 +1,5 @@
 const SNES = {
+  gear: "snes",
   title: "nintendo entertainment system",
   subtitle: "super",
   description:

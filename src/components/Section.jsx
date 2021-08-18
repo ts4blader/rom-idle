@@ -2,18 +2,21 @@ import React from "react";
 import Button from "../components/Button";
 import Image from "../components/Image";
 import { StoreContext } from "../Store";
+import { showBg, hideBg, clearHideTL } from "../animations/Section";
 
-function Section({ content, gear }) {
+function Section({ content }) {
   const [state, dispatch] = React.useContext(StoreContext);
   const [current, setCurrent] = React.useState(0);
 
   React.useEffect(() => {
-    const timer = setTimeout(() => {
+    showBg();
+    hideBg(() => {
       if (current === content.images.length - 1) setCurrent(0);
       else setCurrent(current + 1);
-    }, 10000);
-    return () => clearTimeout(timer);
-  }, [current, content.images.length]);
+    });
+
+    return () => clearHideTL();
+  }, [current]);
 
   const image = require("../res/images/" + content.images[current]).default;
 
@@ -24,7 +27,7 @@ function Section({ content, gear }) {
   };
 
   return (
-    <div className={`${gear}-section section`}>
+    <div className={`${content.gear}-section section`}>
       <div className="section__bg" style={bg}>
         <div className="section__bg__overlay"></div>
       </div>

@@ -1,4 +1,5 @@
 const PSP = {
+  gear: "psp",
   title: "playstation portable",
   subtitle: "let's play",
   description:

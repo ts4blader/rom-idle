@@ -34,7 +34,7 @@ export const CompleteLoading = (endFunction) => {
       1,
       {
         opacity: 1,
-        top: "110%",
+        top: "80%",
         ease: "Expo.easeOut",
       },
       "0.5"
