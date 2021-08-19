@@ -9,7 +9,7 @@ function Section({ content }) {
   const [current, setCurrent] = React.useState(0);
 
   React.useEffect(() => {
-    // init all animation
+    //TODO: init all animation
     let show = showBG(content.gear, content.widths);
     let hide = hideBG(content.gear, () => {
       //* On Complete Function

@@ -1,6 +1,6 @@
 import React from "react";
 
-const NavLink = ({ text, active }) => {
+const NavLink = ({ text, active = false }) => {
   return (
     <li className={active ? "nav__link active" : "nav__link"}>
       <p>{text}</p>

@@ -55,7 +55,7 @@ function FeedBack() {
                 name="description"
                 cols="30"
                 rows="10"
-                placeholder="Description here"
+                placeholder="ROM name - Your problems with that"
               ></textarea>
               <p className="error">
                 {errors.description && "Description is required"}
