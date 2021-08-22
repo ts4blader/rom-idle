@@ -1,21 +1,23 @@
 .cursor {
     position: fixed;
-    top: 0;
-    left: 0;
+    z-index: 100;
     @include size(4 * $size);
+    margin-left: -(2 * $size);
+    margin-top: -(2 * $size);
+    pointer-events: none;
     .circle {
         @include absoluteCenter();
         @include size(2 * $size);
         background: $sub-color;
         border-radius: 50%;
-        border: 1px solid white;
+        border: 2px solid white;
     }
     .diamond {
         position: absolute;
         top: 0;
         left: 0;
         @include size(100%);
-        border: 1px solid white;
+        border: 2px solid white;
     }
     .diamond:nth-child(2) {
         transform: rotate(45deg);
