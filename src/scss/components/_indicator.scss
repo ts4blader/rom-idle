@@ -13,7 +13,15 @@
         background: white;
         border-radius: 50%;
         margin: 2.5 * $size 0;
+        position: relative;
         &.active {
+            background: $sub-color;
+            @include size(100%);
+        }
+        &::after {
+            content: "";
+            @include absoluteCenter();
+            border-radius: inherit;
             background: $sub-color;
         }
     }
