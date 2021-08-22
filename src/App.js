@@ -5,6 +5,7 @@ import Indicator from "./components/Indicator";
 import FeedBack from "./components/FeedBack";
 import Overlay from "./components/Overlay";
 import Loading from "./components/Loading";
+import Cursor from "./components/Cursor";
 import PSP from "./data/psp";
 import SNES from "./data/snes";
 import N3DS from "./data/n3ds";
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="app" id="app">
+      <Cursor />
       <Loading />
       <Overlay />
       <div className="wrapper">
