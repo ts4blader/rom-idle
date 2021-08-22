@@ -7,7 +7,7 @@
     transform: translateY(-50%);
     @include flex(center, column);
     &__item {
-        width: 3 * $size;
+        width: 3.5 * $size;
         margin: 1.5 * $size 0;
         transition: transform 200ms ease;
         &:hover {
