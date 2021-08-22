@@ -14,7 +14,7 @@ const N3DS = {
   ],
   roms: [
     "super mario bros 2",
-    "luigi's mansion",
+    "luigi's mansion - dark moon",
     "super smash bros 3DS",
     "fire emble - awakening",
   ],
