@@ -6,6 +6,10 @@ export const DelayMove = (x, y) => {
     y: y,
     stagger: 0.05,
   });
+  gsap.set(".cursor .circle", {
+    x: x,
+    y: y,
+  });
 };
 
 export const Rotation = () => {

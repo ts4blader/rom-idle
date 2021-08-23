@@ -12,7 +12,7 @@ function Cursor() {
 
   return (
     <div className="cursor hide-on-sm">
-      <div className="shape circle"></div>
+      <div className="circle"></div>
       <div className="shape diamond diamond-1"></div>
       <div className="shape diamond diamond-2"></div>
     </div>
