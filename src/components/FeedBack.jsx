@@ -4,10 +4,14 @@ import { StoreContext } from "../Store";
 import RadioButton from "../components/RadioButton";
 import Combobox from "../components/Combobox";
 import { useForm } from "react-hook-form";
+import { IndicatorActive } from "../animations/Section";
 
 function FeedBack() {
-  const image = require("../res/images/game-over.jpg").default;
   const [state, dispatch] = React.useContext(StoreContext);
+  const image = React.useMemo(
+    () => require("../res/images/game-over.jpg").default,
+    []
+  );
 
   const {
     register,

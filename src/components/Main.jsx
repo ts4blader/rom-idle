@@ -18,12 +18,12 @@ function Main() {
     });
   };
   return (
-    <main ref={main}>
+    <main ref={main} className="main">
       {content.map((item, index) => (
         <Section content={item} key={index} />
       ))}
       <FeedBack />
-      <Indicator length={content.length} scrollTo={scroll} />
+      <Indicator scrollTo={scroll} />
     </main>
   );
 }

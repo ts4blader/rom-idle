@@ -34,7 +34,7 @@ function Section({ content }) {
   };
 
   return (
-    <div className={`${content.gear}-section section`}>
+    <section className={`${content.gear}-section section`}>
       <div className="section__bg" style={bgStyle}>
         <div className="section__bg__overlay"></div>
       </div>
@@ -82,7 +82,7 @@ function Section({ content }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

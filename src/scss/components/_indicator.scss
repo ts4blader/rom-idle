@@ -13,13 +13,15 @@
         border-radius: 50%;
         margin: 2.5 * $size 0;
         position: relative;
-        &.active {
-            background: $sub-color;
+        &.active::after {
             @include size(100%);
         }
         &::after {
+            transition: 0.3s cubic-bezier(0, 0, 0.48, 1.81);
             content: "";
             @include absoluteCenter();
+            width: 0;
+            height: 0;
             border-radius: inherit;
             background: $sub-color;
         }

@@ -1,4 +1,7 @@
 import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const showBG = (gear, widths) => {
   let showTL;
@@ -61,4 +64,19 @@ export const hideBG = (gear, onComplete) => {
       "-=0.5"
     );
   return hideTL;
+};
+
+export const IndicatorActive = (gear) => {
+  gsap.from(`.${gear}-dot`, {
+    scrollTrigger: {
+      scroller: ".main",
+      trigger: `.${gear}-section`,
+      start: "top 10%",
+      end: "center 40%",
+      toggleClass: {
+        targets: `.${gear}-dot`,
+        className: "active",
+      },
+    },
+  });
 };
