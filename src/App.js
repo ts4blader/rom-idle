@@ -2,8 +2,10 @@ import React from "react";
 import Header from "./components/Header";
 import Overlay from "./components/Overlay";
 import Loading from "./components/Loading";
+import PopUp from "./components/PopUp";
 import Cursor, { CursorAnimation } from "./components/Cursor";
 import Main from "./components/Main";
+
 import "./scss/main.scss";
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
       <Cursor />
       <Loading />
       <Overlay />
+      <PopUp />
       <div className="wrapper">
         <Header />
         <Main />

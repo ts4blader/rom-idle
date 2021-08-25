@@ -25,6 +25,11 @@ export const loader = {
   hide: "loader_hide",
 };
 
+export const popUp = {
+  show: "popUp_show",
+  hide: "popUp_hide",
+};
+
 const ACTION = {
   menu,
   overlay,
@@ -32,6 +37,7 @@ const ACTION = {
   sectionHeight,
   overlay_action,
   loader,
+  popUp,
 };
 
 export default ACTION;

@@ -10,6 +10,7 @@ const initial = {
   showOverlay: false,
   overlayAction: null,
   loading: true,
+  showPopUp: false,
 };
 
 const Store = ({ children }) => {

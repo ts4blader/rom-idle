@@ -7,6 +7,11 @@ const Reducer = (state, action) => {
       return { ...state, loading: true };
     case ACTION.loader.hide:
       return { ...state, loading: false };
+    //pop up
+    case ACTION.popUp.show:
+      return { ...state, showPopUp: true };
+    case ACTION.popUp.hide:
+      return { ...state, showPopUp: false };
     // Menu
     case ACTION.menu.open:
       return { ...state, showMenu: true };
