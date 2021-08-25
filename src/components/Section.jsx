@@ -26,7 +26,7 @@ function Section({ content }) {
   }, [current]);
 
   React.useEffect(() => {
-    //TODO init animation one time
+    //TODO init animation run on first render
     moveIn(`.${content.gear}-section`);
   }, []);
 

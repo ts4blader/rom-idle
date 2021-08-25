@@ -18,6 +18,13 @@
         }
     }
 }
+@include responsive($break-point-md) {
+    .section {
+        &__rom-name {
+            width: 50vw;
+        }
+    }
+}
 @include responsive(1600px) {
     .section {
         &__rom-name {
