@@ -4,31 +4,42 @@ import { StoreContext } from "../Store";
 import RadioButton from "../components/RadioButton";
 import Combobox from "../components/Combobox";
 import { useForm } from "react-hook-form";
-import { IndicatorActive } from "../animations/Section";
+import Icon from "../components/Icon";
+import ACTION from "../Action";
+
+const image = require("../res/images/game-over.jpg").default;
+const bg = {
+  backgroundImage: `url(${image})`,
+  backgroundSize: "cover",
+  backgroundPosition: "0% 0%",
+};
 
 function FeedBack() {
   const [state, dispatch] = React.useContext(StoreContext);
-  const image = React.useMemo(
-    () => require("../res/images/game-over.jpg").default,
-    []
-  );
 
+  const showPopup = React.useCallback(() => {
+    dispatch({ type: ACTION.popUp.show });
+    dispatch({ type: ACTION.overlay.open });
+    dispatch({
+      type: ACTION.overlay_action.set,
+      payload: () => {
+        dispatch({ type: ACTION.overlay.close });
+        dispatch({ type: ACTION.popUp.hide });
+      },
+    });
+  }, []);
+  //* React hook form
   const {
     register,
     handleSubmit,
     reset,
     formState: { errors },
   } = useForm();
-
-  const submit = (data) => {
+  //* submit function
+  const submit = React.useCallback((data) => {
     reset();
-  };
-
-  const bg = {
-    backgroundImage: `url(${image})`,
-    backgroundSize: "cover",
-    backgroundPosition: "0% 0%",
-  };
+    showPopup();
+  }, []);
 
   return (
     <div className="section feedback-section">
@@ -61,6 +72,11 @@ function FeedBack() {
                 rows="10"
                 placeholder="ROM name - Your problems with that"
               ></textarea>
+              {/* Eater Egg */}
+              <div className="avatar hide-on-sm" onClick={showPopup}>
+                <div className="caret"></div>
+                <Icon src="avatar.png" />
+              </div>
               <p className="error">
                 {errors.description && "Description is required"}
               </p>
