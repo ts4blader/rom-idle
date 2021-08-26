@@ -6,6 +6,9 @@
 *::before {
     box-sizing: border-box;
     cursor: none;
+    @include responsive($break-point-md) {
+        cursor: initial;
+    }
 }
 
 html {
@@ -61,4 +64,17 @@ a {
 }
 .hide-on-lg {
     display: none;
+}
+.show-on-sm {
+    @include responsive($break-point-sm) {
+        display: initial;
+    }
+}
+.show-on-md {
+    @include responsive($break-point-md) {
+        display: initial;
+    }
+}
+.show-on-lg {
+    display: initial;
 }
