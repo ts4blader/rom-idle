@@ -49,3 +49,26 @@
         }
     }
 }
+@include responsive($break-point-sm) {
+    .loading {
+        &__wrapper {
+            .text {
+                .logo {
+                    font-size: 5 * $size;
+                    .icon {
+                        width: 50px;
+                        margin-right: $size;
+                    }
+                }
+                .dot {
+                    font-size: 15 * $size;
+                    display: inline-block;
+                    margin: $size * 0.5;
+                }
+            }
+            .loaded {
+                top: 110%;
+            }
+        }
+    }
+}
