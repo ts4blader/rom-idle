@@ -20,6 +20,7 @@
         all: unset;
         position: absolute;
         bottom: 5%;
+        display: flex;
         &__item {
             width: 4 * $size;
             margin: 0 2 * $size;

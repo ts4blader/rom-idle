@@ -32,6 +32,8 @@ function App() {
       <div className="wrapper">
         <Switch>
           <Route path="/" component={Home} exact />
+          <Route path="/rom" component={ComingSoon} exact />
+          <Route path="/emulator" component={ComingSoon} exact />
           <Route path="*" component={ComingSoon} />
         </Switch>
       </div>

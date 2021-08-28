@@ -1,9 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useRouteMatch } from "react-router-dom";
 
-const NavLink = ({ text, active = false, link }) => {
+const NavLink = ({ text, link, exact = false }) => {
+  const match = useRouteMatch({
+    path: link,
+    exact: exact,
+  });
+
   return (
-    <li className={active ? "nav__link active" : "nav__link"}>
+    <li className={match ? "nav__link active" : "nav__link"}>
       <Link to={link}>
         <p>{text}</p>
         <p>{text}</p>
@@ -16,9 +21,9 @@ function Nav() {
   return (
     <div className="nav">
       <ul>
-        <NavLink text="home" active={true} link="/" />
-        <NavLink text="about" link="/about" />
-        <NavLink text="contact" link="/contact" />
+        <NavLink text="home" link="/" exact={true} />
+        <NavLink text="ROM" link="/rom" />
+        <NavLink text="emulator" link="/emulator" />
       </ul>
     </div>
   );
