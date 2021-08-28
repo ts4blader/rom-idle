@@ -1,0 +1,56 @@
+.cm-page {
+    section {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container {
+            display: flex;
+            align-items: center;
+        }
+        .left,
+        .right {
+            flex: 1;
+        }
+        .left {
+            .svg {
+                width: 50%;
+                margin: 0 auto;
+            }
+        }
+        .right {
+            h2 {
+                font-size: $size * 5;
+                font-weight: 800;
+                margin-bottom: 5 * $size;
+            }
+        }
+    }
+}
+@include responsive($break-point-sm) {
+    .cm-page {
+        section {
+            .container {
+                flex-direction: column;
+            }
+            .left {
+                margin-bottom: 5 * $size;
+                .svg {
+                    width: 30vw;
+                }
+            }
+            .right {
+                h2 {
+                    text-align: center;
+                    font-size: $size * 3;
+                    margin-bottom: 3 * $size;
+                }
+                .to-home-btn {
+                    width: max-content;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}

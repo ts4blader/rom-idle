@@ -7,7 +7,6 @@
     text-align: center;
     background: $bg-color;
     min-width: 30vw;
-    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -23,6 +22,7 @@
     }
     &__message {
         font-size: 4 * $size;
+        margin-bottom: 4 * $size;
         color: $primary-color;
     }
     .ok-btn {

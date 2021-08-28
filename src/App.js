@@ -4,7 +4,9 @@ import Overlay from "./components/Overlay";
 import Loading from "./components/Loading";
 import PopUp from "./components/PopUp";
 import Cursor, { CursorAnimation } from "./components/Cursor";
-import Main from "./components/Main";
+import Home from "./pages/Home";
+import ComingSoon from "./pages/ComingSoon";
+import { Route, Switch } from "react-router-dom";
 
 import "./scss/main.scss";
 
@@ -25,10 +27,13 @@ function App() {
       <Cursor />
       <Loading />
       <Overlay />
+      <Header />
       <PopUp />
       <div className="wrapper">
-        <Header />
-        <Main />
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="*" component={ComingSoon} />
+        </Switch>
       </div>
     </div>
   );

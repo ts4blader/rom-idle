@@ -3,6 +3,7 @@ import Icon from "../components/Icon";
 import Menu from "../components/Menu";
 import ACTION from "../Action";
 import { StoreContext } from "../Store";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [state, dispatch] = React.useContext(StoreContext);
@@ -25,10 +26,12 @@ function Header() {
   return (
     <div className="header" ref={header}>
       <div className="container">
-        <a className="logo" href="#app">
-          <Icon src="logo.png" alt="LOGO" />
-          <Icon src="logo.png" alt="LOGO" />
-        </a>
+        <Link to="/">
+          <div className="logo">
+            <Icon src="logo.png" alt="LOGO" />
+            <Icon src="logo.png" alt="LOGO" />
+          </div>
+        </Link>
         <div className="header__menu hide-on-lg" onClick={openMenu}>
           <Icon src="menu.png" alt="Menu" />
         </div>

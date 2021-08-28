@@ -1,0 +1,50 @@
+.button-img {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    background: $primary-color;
+    padding: 2 * $size 3 * $size;
+    .icon {
+        width: 15%;
+    }
+    &[position="start"] {
+        flex-direction: row-reverse;
+        .icon {
+            transform: rotate(180deg);
+            margin-right: 3 * $size;
+        }
+    }
+    &[position="end"] {
+        .icon {
+            margin-left: 3 * $size;
+        }
+    }
+    .text {
+        color: white;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 3 * $size;
+    }
+}
+@include responsive($break-point-sm) {
+    .button-img {
+        padding: $size 2 * $size;
+        .icon {
+            width: 10%;
+        }
+        &[position="start"] {
+            padding-left: 0;
+            .icon {
+                margin-right: 1.5 * $size;
+            }
+        }
+        &[position="end"] {
+            .icon {
+                margin-left: 1.5 * $size;
+            }
+        }
+        .text {
+            font-size: 2 * $size;
+        }
+    }
+}

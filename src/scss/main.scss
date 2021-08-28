@@ -16,6 +16,7 @@
 @import "./components/indicator";
 @import "./components/radio-button";
 @import "./components/combobox";
+@import "./components/button-img";
 @import "./components/cursor";
 @import "./components/pop-up";
 @import "./components/loading";
@@ -23,3 +24,6 @@
 @import "./components/snes";
 @import "./components/n3ds";
 @import "./components/feedback";
+
+// ============================== Pages ===================================
+@import "./pages/coming-soon";
