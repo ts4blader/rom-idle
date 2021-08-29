@@ -40,6 +40,7 @@
             }
         }
         .loaded {
+            text-align: center;
             color: $bg-color;
             font-weight: 600;
             font-size: 3 * $size;
@@ -67,7 +68,7 @@
                 }
             }
             .loaded {
-                top: 110%;
+                font-size: 2 * $size;
             }
         }
     }
