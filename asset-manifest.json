@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/rom-idle/static/css/main.11c42d15.chunk.css",
+    "main.js": "/rom-idle/static/js/main.3e4b4431.chunk.js",
+    "main.js.map": "/rom-idle/static/js/main.3e4b4431.chunk.js.map",
+    "runtime-main.js": "/rom-idle/static/js/runtime-main.266abff3.js",
+    "runtime-main.js.map": "/rom-idle/static/js/runtime-main.266abff3.js.map",
+    "static/js/2.f00e8366.chunk.js": "/rom-idle/static/js/2.f00e8366.chunk.js",
+    "static/js/2.f00e8366.chunk.js.map": "/rom-idle/static/js/2.f00e8366.chunk.js.map",
+    "static/js/3.3c1f0606.chunk.js": "/rom-idle/static/js/3.3c1f0606.chunk.js",
+    "static/js/3.3c1f0606.chunk.js.map": "/rom-idle/static/js/3.3c1f0606.chunk.js.map",
+    "index.html": "/rom-idle/index.html",
+    "static/css/main.11c42d15.chunk.css.map": "/rom-idle/static/css/main.11c42d15.chunk.css.map",
+    "static/js/2.f00e8366.chunk.js.LICENSE.txt": "/rom-idle/static/js/2.f00e8366.chunk.js.LICENSE.txt",
+    "static/media/avatar.png": "/rom-idle/static/media/avatar.68dc8487.png",
+    "static/media/contra.jpg": "/rom-idle/static/media/contra.43ee2b68.jpg",
+    "static/media/final-fantasy.jpg": "/rom-idle/static/media/final-fantasy.717f021e.jpg",
+    "static/media/fire-emble.jpg": "/rom-idle/static/media/fire-emble.debe726f.jpg",
+    "static/media/game-over.jpg": "/rom-idle/static/media/game-over.eb8e0903.jpg",
+    "static/media/gamepad.svg": "/rom-idle/static/media/gamepad.d1e4be66.svg",
+    "static/media/gow.jpg": "/rom-idle/static/media/gow.a71d3c27.jpg",
+    "static/media/kingdom-heart.jpg": "/rom-idle/static/media/kingdom-heart.ddf15afd.jpg",
+    "static/media/legend-of-zelda.jpg": "/rom-idle/static/media/legend-of-zelda.36185eaf.jpg",
+    "static/media/luigi-mansion.jpg": "/rom-idle/static/media/luigi-mansion.1b7e3fee.jpg",
+    "static/media/monster-hunter.jpg": "/rom-idle/static/media/monster-hunter.d78a62d7.jpg",
+    "static/media/ninja-turtles.jpg": "/rom-idle/static/media/ninja-turtles.099859f3.jpg",
+    "static/media/super-mario-bros.jpg": "/rom-idle/static/media/super-mario-bros.957dc6ec.jpg",
+    "static/media/super-mario.jpg": "/rom-idle/static/media/super-mario.a2dc20a0.jpg",
+    "static/media/super-smash.jpg": "/rom-idle/static/media/super-smash.87041ec9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.266abff3.js",
+    "static/js/2.f00e8366.chunk.js",
+    "static/css/main.11c42d15.chunk.css",
+    "static/js/main.3e4b4431.chunk.js"
+  ]
+}
