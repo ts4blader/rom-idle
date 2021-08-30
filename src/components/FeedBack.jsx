@@ -1,9 +1,9 @@
 import React from "react";
+import { useForm } from "react-hook-form";
 import problems from "../data/feedback";
 import { StoreContext } from "../Store";
 import RadioButton from "../components/RadioButton";
 import Combobox from "../components/Combobox";
-import { useForm } from "react-hook-form";
 import Icon from "../components/Icon";
 import ACTION from "../Action";
 

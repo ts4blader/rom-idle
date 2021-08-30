@@ -30,13 +30,17 @@ function Section({ content }) {
     moveIn(`.${content.gear}-section`);
   }, []);
 
-  const image = require("../res/images/" + content.images[current]).default;
+  const image = React.useMemo(() => {
+    return require("../res/images/" + content.images[current]).default;
+  }, [current]);
 
-  const bgStyle = {
-    backgroundImage: `url(${image})`,
-    backgroundSize: "cover",
-    backgroundPosition: `${content.coodinates[current]}`,
-  };
+  const bgStyle = React.useMemo(() => {
+    return {
+      backgroundImage: `url(${image})`,
+      backgroundSize: "cover",
+      backgroundPosition: `${content.coodinates[current]}`,
+    };
+  }, [current]);
 
   return (
     <section className={`${content.gear}-section section`}>

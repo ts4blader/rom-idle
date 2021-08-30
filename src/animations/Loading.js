@@ -1,5 +1,6 @@
 import { gsap, SteppedEase } from "gsap";
 
+// loading animation
 var tl = gsap.timeline({ repeat: -1, yoyo: false, repeatDelay: 0.25 });
 const LoadingAnimation = () => {
   tl.staggerTo(
@@ -22,6 +23,7 @@ const LoadingAnimation = () => {
   );
 };
 
+// after loading complete
 export const CompleteLoading = (endFunction = null) => {
   let complete = gsap.timeline({ onComplete: endFunction });
   complete
@@ -45,6 +47,7 @@ export const CompleteLoading = (endFunction = null) => {
     });
 };
 
+// press start to start
 export const Start = (complete) => {
   const tl = gsap.timeline({ onComplete: complete });
   tl.to(".loading .text, .loaded", {
@@ -63,6 +66,7 @@ export const Start = (complete) => {
   );
 };
 
+// blink animation
 export const Blink = () => {
   const tl = gsap.timeline({ repeat: -1 });
   tl.to(".loaded", {
@@ -70,11 +74,13 @@ export const Blink = () => {
     opacity: 0,
     ease: SteppedEase.config(1),
   }).to(".loaded", {
-    duration: 0.5,
+    duration: 0.2,
     opacity: 1,
     ease: SteppedEase.config(1),
   });
 };
+
+// speedy blink animation
 export const SpeedyBlink = (complete) => {
   const tl = gsap.timeline({ repeat: 5, onComplete: complete });
   tl.to(".loaded", {
@@ -88,6 +94,7 @@ export const SpeedyBlink = (complete) => {
   });
 };
 
+// clear loading timeline
 export const LoadingFree = () => {
   tl.clear();
 };

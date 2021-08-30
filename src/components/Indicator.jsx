@@ -7,7 +7,7 @@ function Indicator({ scrollTo }) {
     sections.forEach((item) => {
       IndicatorActive(item);
     });
-  });
+  }, []);
 
   return (
     <div className="indicator">

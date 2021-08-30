@@ -6,6 +6,7 @@ import LoadingAnimation, {
   Blink,
   SpeedyBlink,
   Start,
+  LoadingFree,
 } from "../animations/Loading";
 import Icon from "../components/Icon";
 
@@ -28,6 +29,7 @@ function Loading() {
           setLoaded("started");
           SpeedyBlink(() => {
             Start(() => {
+              LoadingFree();
               dispatch({ type: ACTION.loader.hide });
             });
           });

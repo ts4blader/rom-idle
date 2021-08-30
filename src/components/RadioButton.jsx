@@ -1,7 +1,10 @@
 import React from "react";
 
 const RadioButton = ({ id, label, register }) => {
-  id = "rate-" + id;
+  id = React.useMemo(() => {
+    return "rate-" + id;
+  }, [id]);
+
   return (
     <div className="radio-button">
       <input

@@ -8,10 +8,10 @@ import ACTION from "../Action";
 function Menu() {
   const [state, dispatch] = React.useContext(StoreContext);
 
-  const closeMenu = () => {
+  const closeMenu = React.useCallback(() => {
     dispatch({ type: ACTION.menu.close });
     dispatch({ type: ACTION.overlay.close });
-  };
+  }, []);
 
   return (
     <div className={state.showMenu ? "menu" : "menu hide"}>

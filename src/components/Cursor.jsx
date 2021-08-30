@@ -6,9 +6,10 @@ export const CursorAnimation = (x, y) => {
 };
 
 function Cursor() {
+  // Rotation animation for cursor
   React.useEffect(() => {
     Rotation();
-  });
+  }, []);
 
   return (
     <div className="cursor hide-on-md">

@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 
+// Delay Move for cursor
 export const DelayMove = (x, y) => {
   gsap.to(".shape", {
     x: x,
@@ -12,6 +13,7 @@ export const DelayMove = (x, y) => {
   });
 };
 
+// Rotation cursor animation
 export const Rotation = () => {
   const tl1 = gsap.timeline({ repeat: -1, yoyo: true });
   const tl2 = gsap.timeline({ repeat: -1, yoyo: true });

@@ -9,14 +9,14 @@ function Header() {
   const [state, dispatch] = React.useContext(StoreContext);
   const header = React.useRef();
 
-  const openMenu = () => {
+  const openMenu = React.useCallback(() => {
     dispatch({ type: ACTION.menu.open });
     dispatch({ type: ACTION.overlay.open });
     dispatch({
       type: ACTION.overlay_action.set,
       payload: () => dispatch({ type: ACTION.menu.close }),
     });
-  };
+  }, []);
 
   React.useEffect(() => {
     const height = header.current.offsetHeight + header.current.offsetTop * 1;
