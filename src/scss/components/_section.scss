@@ -25,6 +25,7 @@ main::-webkit-scrollbar {
     &__caption {
         text-transform: capitalize;
         font-size: 7 * $size;
+        margin-bottom: 0.5em;
     }
     &__subtitle {
         font-family: $sub-font;
@@ -38,6 +39,7 @@ main::-webkit-scrollbar {
         font-size: 3 * $size;
         font-family: $sub-font;
         line-height: 1.5;
+        margin-bottom: 1.2em;
     }
     .row.bottom {
         width: max-content;
@@ -79,9 +81,6 @@ main::-webkit-scrollbar {
         &__description {
             font-size: 2.2 * $size;
             line-height: 1.5;
-        }
-        .button {
-            width: 40% !important;
         }
     }
 }

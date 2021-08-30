@@ -20,8 +20,23 @@
 }
 @include responsive($break-point-md) {
     .section {
+        &__inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .container {
+            margin-top: 0 !important;
+        }
+        .row.bottom {
+            position: absolute;
+            right: 10%;
+            bottom: 0;
+        }
         &__rom-name {
-            width: 50vw;
+            width: 60vw;
+            height: 5 * $size;
         }
     }
 }
@@ -41,7 +56,6 @@
         }
         &__rom-name {
             width: 100%;
-            height: 5 * $size;
             margin-left: auto !important;
             .text {
                 width: 100%;

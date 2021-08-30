@@ -8,7 +8,7 @@
     }
     .section__caption {
         flex-direction: column;
-        margin-bottom: 5 * $size;
+        margin-bottom: 0.7em;
     }
     .section__title {
         transform: unset;
@@ -18,7 +18,7 @@
     }
     .section__description {
         width: 30vw;
-        margin-bottom: 6 * $size;
+        margin-bottom: 2.5em;
     }
     .button {
         width: 25%;
@@ -38,39 +38,29 @@
         }
     }
 }
-@include responsive(1600px) {
-    $size: $size-md;
-    .n3ds-section {
-        .section__caption {
-            margin-bottom: 5 * $size;
-        }
-        .section__subtitle {
-            margin-bottom: 1 * $size;
-        }
-        .section__description {
-            margin-bottom: 6 * $size;
-        }
-    }
-}
 @include responsive($break-point-md) {
     .n3ds-section.section {
         .container {
             margin-left: 55%;
-            margin-bottom: 10 * $size;
         }
         .section__subtitle {
             margin-bottom: 0;
         }
         .section__description {
-            width: 40%;
+            width: 80%;
+        }
+        .button {
+            width: 80%;
         }
         .row.bottom {
-            position: absolute;
             top: unset;
             left: unset;
-            right: 10%;
-            bottom: 5%;
             transform: unset;
+            .section__rom-name {
+                position: unset;
+                right: unset;
+                top: unset;
+            }
         }
     }
 }

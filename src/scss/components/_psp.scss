@@ -1,14 +1,10 @@
 .psp-section {
-    .section__caption {
-        margin-bottom: 5.5 * $size;
-    }
     .section__description {
         width: 60 * $size;
-        margin-bottom: 5 * $size;
     }
     .button {
         width: 25%;
-        margin-bottom: 6.5 * $size;
+        margin-bottom: 7 * $size;
     }
     .section__bg {
         width: 50%;
@@ -22,15 +18,8 @@
 @include responsive(1600px) {
     $size: $size-md;
     .psp-section {
-        .section__caption {
-            margin-bottom: 5.5 * $size;
-        }
         .section__description {
             width: 60 * $size;
-            margin-bottom: 5 * $size;
-        }
-        .button {
-            margin-bottom: 6.5 * $size;
         }
         .section__bg {
             right: 4.5 * $size;
@@ -40,7 +29,8 @@
 @include responsive($break-point-md) {
     .psp-section {
         .button {
-            margin-bottom: 5 * $size;
+            width: 40%;
+            margin-bottom: 0;
         }
         .row.bottom {
             width: 100%;
@@ -57,9 +47,6 @@
     .psp-section {
         .section__title {
             width: 80%;
-        }
-        .button {
-            margin-bottom: 3 * $size;
         }
     }
 }
