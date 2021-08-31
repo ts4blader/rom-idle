@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/rom-idle/static/css/main.11c42d15.chunk.css",
-    "main.js": "/rom-idle/static/js/main.3e4b4431.chunk.js",
-    "main.js.map": "/rom-idle/static/js/main.3e4b4431.chunk.js.map",
+    "main.css": "/rom-idle/static/css/main.babc4347.chunk.css",
+    "main.js": "/rom-idle/static/js/main.7876063c.chunk.js",
+    "main.js.map": "/rom-idle/static/js/main.7876063c.chunk.js.map",
     "runtime-main.js": "/rom-idle/static/js/runtime-main.266abff3.js",
     "runtime-main.js.map": "/rom-idle/static/js/runtime-main.266abff3.js.map",
     "static/js/2.f00e8366.chunk.js": "/rom-idle/static/js/2.f00e8366.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.3c1f0606.chunk.js": "/rom-idle/static/js/3.3c1f0606.chunk.js",
     "static/js/3.3c1f0606.chunk.js.map": "/rom-idle/static/js/3.3c1f0606.chunk.js.map",
     "index.html": "/rom-idle/index.html",
-    "static/css/main.11c42d15.chunk.css.map": "/rom-idle/static/css/main.11c42d15.chunk.css.map",
+    "static/css/main.babc4347.chunk.css.map": "/rom-idle/static/css/main.babc4347.chunk.css.map",
     "static/js/2.f00e8366.chunk.js.LICENSE.txt": "/rom-idle/static/js/2.f00e8366.chunk.js.LICENSE.txt",
     "static/media/avatar.png": "/rom-idle/static/media/avatar.68dc8487.png",
     "static/media/contra.jpg": "/rom-idle/static/media/contra.43ee2b68.jpg",
@@ -31,7 +31,7 @@
   "entrypoints": [
     "static/js/runtime-main.266abff3.js",
     "static/js/2.f00e8366.chunk.js",
-    "static/css/main.11c42d15.chunk.css",
-    "static/js/main.3e4b4431.chunk.js"
+    "static/css/main.babc4347.chunk.css",
+    "static/js/main.7876063c.chunk.js"
   ]
 }
