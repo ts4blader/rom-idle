@@ -1,18 +1,18 @@
 const social = [
   {
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/minhquoc.tran.9828",
     icon: "facebook.png",
   },
   {
-    link: "https://www.google.com/",
+    link: "mailto:owlthekeeper@gmail.com",
     icon: "gmail.png",
   },
   {
-    link: "https://www.instagram.com/",
+    link: "https://www.instagram.com/ts4blader/",
     icon: "instagram.png",
   },
   {
-    link: "https://www.twitter.com/",
+    link: "https://twitter.com/OwlTheKeeper/",
     icon: "twitter.png",
   },
 ];

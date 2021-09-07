@@ -39,7 +39,7 @@ function Loading() {
   }, []);
 
   return (
-    <div className="loading" ref={loading}>
+    <div className="loading transition" ref={loading}>
       {state.loading ? (
         <div className="loading__wrapper">
           <div className="text">

@@ -1,5 +1,6 @@
 import React from "react";
-import { Link, useRouteMatch } from "react-router-dom";
+import { useRouteMatch } from "react-router-dom";
+import AnimationLink from "../components/AnimationLink";
 
 const NavLink = ({ text, link, exact = false }) => {
   const match = useRouteMatch({
@@ -9,10 +10,10 @@ const NavLink = ({ text, link, exact = false }) => {
 
   return (
     <li className={match ? "nav__link active" : "nav__link"}>
-      <Link to={link}>
+      <AnimationLink to={link}>
         <p>{text}</p>
         <p>{text}</p>
-      </Link>
+      </AnimationLink>
     </li>
   );
 };

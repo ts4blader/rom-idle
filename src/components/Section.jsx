@@ -3,6 +3,8 @@ import Button from "../components/Button";
 import Image from "../components/Image";
 import { StoreContext } from "../Store";
 import { showBG, hideBG, moveIn } from "../animations/Section";
+import { Link } from "react-router-dom";
+import AnimationLink from "../components/AnimationLink";
 
 function Section({ content }) {
   const [state, dispatch] = React.useContext(StoreContext);
@@ -60,7 +62,9 @@ function Section({ content }) {
             <h3 className="section__title">{content.title}</h3>
           </div>
           <p className="section__description">{content.description}</p>
-          <Button text={content.cta} />
+          <AnimationLink to={`/rom/${content.gear}`}>
+            <Button text={content.cta} />
+          </AnimationLink>
           <div className="row bottom">
             {/* gallery  */}
             <div className="section__gallery row hide-on-md">

@@ -2,6 +2,7 @@ import React from "react";
 import gamepad from "../res/images/gamepad.svg";
 import ButtonImage from "../components/ButtonImage";
 import { Link } from "react-router-dom";
+import AnimationLink from "../components/AnimationLink";
 
 function ComingSoon() {
   return (
@@ -21,13 +22,13 @@ function ComingSoon() {
                 Oops! This page is coming soon!
               </h2>
               <div className="to-home-btn">
-                <Link to="/">
+                <AnimationLink to="/">
                   <ButtonImage
                     text="back to home"
                     src="right-arrow.png"
                     position="start"
                   />
-                </Link>
+                </AnimationLink>
               </div>
             </div>
           </div>
