@@ -13,6 +13,9 @@
         &:hover {
             transform: scale(1.5);
         }
+        &:active {
+            transform: scale(0.8);
+        }
     }
 }
 @include responsive($break-point-md) {
